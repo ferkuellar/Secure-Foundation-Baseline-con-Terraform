@@ -1,0 +1,48 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   docs/standards/naming-convention.md
+	modified:   docs/standards/tagging-standard.md
+	modified:   environments/dev/backend.tf
+	modified:   environments/dev/main.tf
+	modified:   environments/dev/outputs.tf
+	modified:   environments/dev/providers.tf
+	modified:   environments/dev/terraform.tfvars
+	modified:   environments/dev/variables.tf
+	modified:   environments/dev/versions.tf
+	modified:   environments/prod/backend.tf
+	modified:   environments/prod/main.tf
+	modified:   environments/prod/outputs.tf
+	modified:   environments/prod/providers.tf
+	modified:   environments/prod/terraform.tfvars
+	modified:   environments/prod/variables.tf
+	modified:   environments/prod/versions.tf
+	modified:   environments/qa/backend.tf
+	modified:   environments/qa/main.tf
+	modified:   environments/qa/outputs.tf
+	modified:   environments/qa/providers.tf
+	modified:   environments/qa/terraform.tfvars
+	modified:   environments/qa/variables.tf
+	modified:   environments/qa/versions.tf
+	modified:   modules/network/README.md
+	modified:   modules/network/main.tf
+	modified:   modules/network/outputs.tf
+	modified:   modules/network/variables.tf
+	modified:   modules/network/versions.tf
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/adrs/ADR-001-backend-strategy.md
+	docs/adrs/ADR-002-naming-standard.md
+	docs/adrs/ADR-003-tagging-standard.md
+	docs/mermaid/phase-1-foundation-layout.mmd
+	environments/dev/locals.tf
+	environments/prod/locals.tf
+	environments/qa/locals.tf
+	evidence/phase-0/txt/22-first-commit.txt
+	evidence/phase-1/
+
+no changes added to commit (use "git add" and/or "git commit -a")

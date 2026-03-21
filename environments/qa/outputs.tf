@@ -1,0 +1,9 @@
+output "name_prefix" {
+  description = "Computed naming prefix for this environment."
+  value       = local.name_prefix
+}
+
+output "common_tags" {
+  description = "Common tags applied through the environment."
+  value       = local.common_tags
+}

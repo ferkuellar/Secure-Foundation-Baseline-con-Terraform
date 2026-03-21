@@ -1,0 +1,16 @@
+[main 43fe2a4] phase-0: bootstrap repository structure, tooling validation, docs, and evidence baseline
+ 20 files changed, 481 insertions(+)
+ create mode 100644 evidence/phase-0/txt/05-gitignore.txt
+ create mode 100644 evidence/phase-0/txt/06-terraform-version.txt
+ create mode 100644 evidence/phase-0/txt/07-git-version.txt
+ create mode 100644 evidence/phase-0/txt/08-powershell-version.txt
+ create mode 100644 evidence/phase-0/txt/09-aws-version.txt
+ create mode 100644 evidence/phase-0/txt/12-tflint-version.txt
+ create mode 100644 evidence/phase-0/txt/13-checkov-scan.txt
+ create mode 100644 evidence/phase-0/txt/14-precommit-version.txt
+ create mode 100644 evidence/phase-0/txt/16-adr-000.txt
+ create mode 100644 evidence/phase-0/txt/17-mermaid-phase-0.txt
+ create mode 100644 evidence/phase-0/txt/18-bootstrap-runbook.txt
+ create mode 100644 evidence/phase-0/txt/19-validate-local-tooling-script.txt
+ create mode 100644 evidence/phase-0/txt/20-final-tree.txt
+ create mode 100644 evidence/phase-0/txt/21-final-git-status.txt

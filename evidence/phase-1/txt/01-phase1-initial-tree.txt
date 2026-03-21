@@ -1,0 +1,146 @@
+Listado de rutas de carpetas para el volumen OS
+El n·mero de serie del volumen es 5A1D-6801
+C:.
+ª   .gitignore
+ª   CHANGELOG.md
+ª   LICENSE
+ª   README.md
+ª   
++---docs
+ª   +---adrs
+ª   ª       ADR-000-repository-structure.md
+ª   ª       
+ª   +---architecture
+ª   ª       overview.md
+ª   ª       
+ª   +---mermaid
+ª   ª       phase-0-bootstrap.mmd
+ª   ª       
+ª   +---runbooks
+ª   ª       bootstrap-runbook.md
+ª   ª       
+ª   +---standards
+ª           naming-convention.md
+ª           tagging-standard.md
+ª           
++---environments
+ª   +---dev
+ª   ª       backend.tf
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       providers.tf
+ª   ª       terraform.tfvars
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---prod
+ª   ª       backend.tf
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       providers.tf
+ª   ª       terraform.tfvars
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---qa
+ª           backend.tf
+ª           main.tf
+ª           outputs.tf
+ª           providers.tf
+ª           terraform.tfvars
+ª           variables.tf
+ª           versions.tf
+ª           
++---evidence
+ª   +---phase-0
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   ª           01-project-tree-txt
+ª   ª           02-files-created.txt
+ª   ª           03-git-init.txt
+ª   ª           04-git-status-initial.txt
+ª   ª           05-gitignore.txt
+ª   ª           06-terraform-version.txt
+ª   ª           07-git-version.txt
+ª   ª           08-powershell-version.txt
+ª   ª           09-aws-version.txt
+ª   ª           12-tflint-version.txt
+ª   ª           13-checkov-scan.txt
+ª   ª           14-precommit-version.txt
+ª   ª           16-adr-000.txt
+ª   ª           17-mermaid-phase-0.txt
+ª   ª           18-bootstrap-runbook.txt
+ª   ª           19-validate-local-tooling-script.txt
+ª   ª           20-final-tree.txt
+ª   ª           21-final-git-status.txt
+ª   ª           22-first-commit.txt
+ª   ª           
+ª   +---phase-1
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   ª           01-phase1-initial-tree.txt
+ª   ª           
+ª   +---phase-2
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-3
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-4
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-5
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-6
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-7
+ª       +---screenshots
+ª       +---txt
++---modules
+ª   +---budgets
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       README.md
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---iam
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       README.md
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---logging
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       README.md
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---network
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       README.md
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---observability
+ª           main.tf
+ª           outputs.tf
+ª           README.md
+ª           variables.tf
+ª           versions.tf
+ª           
++---scripts
+    +---bootstrap
+    ª       bootstrap.ps1
+    ª       
+    +---helpers
+    ª       collect-evidence.ps1
+    ª       
+    +---validation
+            validate-local-tooling.ps1
+            

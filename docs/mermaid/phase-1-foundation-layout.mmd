@@ -1,0 +1,23 @@
+flowchart TD
+    A[Environment Root: dev] --> B[versions.tf]
+    A --> C[providers.tf]
+    A --> D[backend.tf]
+    A --> E[variables.tf]
+    A --> F[locals.tf]
+    A --> G[main.tf]
+    A --> H[outputs.tf]
+
+    F --> I[Computed name_prefix]
+    F --> J[Common tags]
+
+    G --> K[Module: network]
+
+    K --> L[Module inputs]
+    K --> M[Module outputs]
+
+    N[Standards] --> O[Naming Convention]
+    N --> P[Tagging Standard]
+
+    Q[ADRs] --> R[Backend Strategy]
+    Q --> S[Naming Decision]
+    Q --> T[Tagging Decision]

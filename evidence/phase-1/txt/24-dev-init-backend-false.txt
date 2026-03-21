@@ -1,0 +1,10 @@
+[0m[1mInitializing the backend...[0m
+[0m[1mInitializing modules...[0m
+[33mÔòÀ[0m[0m
+[33mÔöé[0m [0m[1m[33mWarning: [0m[0m[1mDeprecated Parameter[0m
+[33mÔöé[0m [0m
+[33mÔöé[0m [0m[0m  on backend.tf line 6, in terraform:
+[33mÔöé[0m [0m   6:     dynamodb_table = [4m"REPLACE_ME_TF_LOCKS"[0m[0m
+[33mÔöé[0m [0m
+[33mÔöé[0m [0mThe parameter "dynamodb_table" is deprecated. Use parameter "use_lockfile" instead.
+[33mÔòÁ[0m[0m
