@@ -1,0 +1,48 @@
+Listado de rutas de carpetas para el volumen OS
+El n·mero de serie del volumen es 5A1D-6801
+C:.
++---docs
+ª   +---adrs
+ª   +---architecture
+ª   +---mermaid
+ª   +---runbooks
+ª   +---standards
++---environments
+ª   +---dev
+ª   +---prod
+ª   +---qa
++---evidence
+ª   +---phase-0
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-1
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-2
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-3
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-4
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-5
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-6
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-7
+ª       +---screenshots
+ª       +---txt
++---modules
+ª   +---budgets
+ª   +---iam
+ª   +---logging
+ª   +---network
+ª   +---observability
++---scripts
+    +---bootstrap
+    +---helpers
+    +---validation
