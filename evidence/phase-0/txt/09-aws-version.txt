@@ -1,0 +1,1 @@
+aws-cli/2.30.3 Python/3.13.7 Windows/11 exe/AMD64
