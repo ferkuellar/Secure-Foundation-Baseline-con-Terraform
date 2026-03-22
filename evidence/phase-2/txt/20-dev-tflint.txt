@@ -1,0 +1,9 @@
+1 issue(s) found:
+
+Warning: [Fixable] local.region_code is declared but not used (terraform_unused_declarations)
+
+  on locals.tf line 4:
+   4:   region_code  = lower(var.aws_region)
+
+Reference: https://github.com/terraform-linters/tflint-ruleset-terraform/blob/v0.14.1/docs/rules/terraform_unused_declarations.md
+

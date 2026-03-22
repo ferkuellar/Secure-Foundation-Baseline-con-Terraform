@@ -1,0 +1,30 @@
+flowchart LR
+    Internet((Internet))
+    IGW[Internet Gateway]
+    NAT[NAT Gateway + EIP]
+
+    subgraph VPC["VPC 10.10.0.0/16"]
+        subgraph AZ1["AZ-1"]
+            PUB1["Public Subnet 10.10.1.0/24"]
+            PRI1["Private Subnet 10.10.11.0/24"]
+        end
+
+        subgraph AZ2["AZ-2"]
+            PUB2["Public Subnet 10.10.2.0/24"]
+            PRI2["Private Subnet 10.10.12.0/24"]
+        end
+
+        RTBP["Public Route Table"]
+        RTBR["Private Route Table"]
+    end
+
+    Internet --> IGW
+    IGW --> PUB1
+    IGW --> PUB2
+    PUB1 --> NAT
+    PRI1 --> RTBR
+    PRI2 --> RTBR
+    RTBR --> NAT
+    PUB1 --> RTBP
+    PUB2 --> RTBP
+    RTBP --> IGW

@@ -1,0 +1,18 @@
+project_name  = "terraform-secure-foundation"
+environment   = "dev"
+aws_region    = "us-east-1"
+owner         = "Fernando"
+cost_center   = "LAB-001"
+business_unit = "Architecture"
+
+vpc_cidr = "10.10.0.0/16"
+
+public_subnet_cidrs = [
+  "10.10.1.0/24",
+  "10.10.2.0/24"
+]
+
+private_subnet_cidrs = [
+  "10.10.11.0/24",
+  "10.10.12.0/24"
+]
