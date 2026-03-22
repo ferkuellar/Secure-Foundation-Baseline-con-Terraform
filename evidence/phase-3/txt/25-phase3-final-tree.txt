@@ -1,0 +1,304 @@
+Listado de rutas de carpetas para el volumen OS
+El n·mero de serie del volumen es 5A1D-6801
+C:.
+ª   .gitignore
+ª   CHANGELOG.md
+ª   LICENSE
+ª   README.md
+ª   
++---docs
+ª   +---adrs
+ª   ª       ADR-000-repository-structure.md
+ª   ª       ADR-001-backend-strategy.md
+ª   ª       ADR-002-naming-standard.md
+ª   ª       ADR-003-tagging-standard.md
+ª   ª       ADR-004-network-baseline.md
+ª   ª       ADR-005-secure-access-pattern.md
+ª   ª       
+ª   +---architecture
+ª   ª       overview.md
+ª   ª       phase-2-network-tradeoffs.md
+ª   ª       phase-3-secure-access-tradeoffs.md
+ª   ª       
+ª   +---mermaid
+ª   ª       phase-0-bootstrap.mmd
+ª   ª       phase-1-foundation-layout.mmd
+ª   ª       phase-2-secure-network-baseline.mmd
+ª   ª       phase-3-secure-access.mmd
+ª   ª       
+ª   +---runbooks
+ª   ª       bootstrap-runbook.md
+ª   ª       
+ª   +---standards
+ª           naming-convention.md
+ª           tagging-standard.md
+ª           
++---environments
+ª   +---dev
+ª   ª   ª   .terraform.lock.hcl
+ª   ª   ª   backend.tf
+ª   ª   ª   locals.tf
+ª   ª   ª   main.tf
+ª   ª   ª   outputs.tf
+ª   ª   ª   providers.tf
+ª   ª   ª   terraform.tfvars
+ª   ª   ª   tfplan
+ª   ª   ª   variables.tf
+ª   ª   ª   versions.tf
+ª   ª   ª   
+ª   ª   +---.terraform
+ª   ª       ª   terraform.tfstate
+ª   ª       ª   
+ª   ª       +---modules
+ª   ª       ª       modules.json
+ª   ª       ª       
+ª   ª       +---providers
+ª   ª           +---registry.terraform.io
+ª   ª               +---hashicorp
+ª   ª                   +---aws
+ª   ª                       +---5.100.0
+ª   ª                           +---windows_amd64
+ª   ª                                   LICENSE.txt
+ª   ª                                   terraform-provider-aws_v5.100.0_x5.exe
+ª   ª                                   
+ª   +---prod
+ª   ª   ª   .terraform.lock.hcl
+ª   ª   ª   backend.tf
+ª   ª   ª   locals.tf
+ª   ª   ª   main.tf
+ª   ª   ª   outputs.tf
+ª   ª   ª   providers.tf
+ª   ª   ª   terraform.tfvars
+ª   ª   ª   variables.tf
+ª   ª   ª   versions.tf
+ª   ª   ª   
+ª   ª   +---.terraform
+ª   ª       +---modules
+ª   ª       ª       modules.json
+ª   ª       ª       
+ª   ª       +---providers
+ª   ª           +---registry.terraform.io
+ª   ª               +---hashicorp
+ª   ª                   +---aws
+ª   ª                       +---5.100.0
+ª   ª                           +---windows_amd64
+ª   ª                                   LICENSE.txt
+ª   ª                                   terraform-provider-aws_v5.100.0_x5.exe
+ª   ª                                   
+ª   +---qa
+ª       ª   .terraform.lock.hcl
+ª       ª   backend.tf
+ª       ª   locals.tf
+ª       ª   main.tf
+ª       ª   outputs.tf
+ª       ª   providers.tf
+ª       ª   terraform.tfvars
+ª       ª   variables.tf
+ª       ª   versions.tf
+ª       ª   
+ª       +---.terraform
+ª           +---modules
+ª           ª       modules.json
+ª           ª       
+ª           +---providers
+ª               +---registry.terraform.io
+ª                   +---hashicorp
+ª                       +---aws
+ª                           +---5.100.0
+ª                               +---windows_amd64
+ª                                       LICENSE.txt
+ª                                       terraform-provider-aws_v5.100.0_x5.exe
+ª                                       
++---evidence
+ª   +---phase-0
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   ª           01-project-tree-txt
+ª   ª           02-files-created.txt
+ª   ª           03-git-init.txt
+ª   ª           04-git-status-initial.txt
+ª   ª           05-gitignore.txt
+ª   ª           06-terraform-version.txt
+ª   ª           07-git-version.txt
+ª   ª           08-powershell-version.txt
+ª   ª           09-aws-version.txt
+ª   ª           12-tflint-version.txt
+ª   ª           13-checkov-scan.txt
+ª   ª           14-precommit-version.txt
+ª   ª           16-adr-000.txt
+ª   ª           17-mermaid-phase-0.txt
+ª   ª           18-bootstrap-runbook.txt
+ª   ª           19-validate-local-tooling-script.txt
+ª   ª           20-final-tree.txt
+ª   ª           21-final-git-status.txt
+ª   ª           22-first-commit.txt
+ª   ª           
+ª   +---phase-1
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   ª           01-phase1-initial-tree.txt
+ª   ª           02-dev-versions.txt
+ª   ª           03-dev-providers.txt
+ª   ª           04-dev-backend.txt
+ª   ª           05-dev-variables.txt
+ª   ª           06-dev-locals.txt
+ª   ª           07-dev-main.txt
+ª   ª           08-dev-outputs.txt
+ª   ª           09-dev-tfvars.txt
+ª   ª           10-environment-files-after-copy.txt
+ª   ª           11-qa-tfvars.txt
+ª   ª           12-prod-tfvars.txt
+ª   ª           13-network-versions.txt
+ª   ª           14-network-variables.txt
+ª   ª           15-network-main.txt
+ª   ª           16-network-outputs.txt
+ª   ª           17-network-readme.txt
+ª   ª           18-naming-standard.txt
+ª   ª           19-tagging-standard.txt
+ª   ª           20-adr-001.txt
+ª   ª           21-adr-002.txt
+ª   ª           22-adr-003.txt
+ª   ª           23-phase1-mermaid.txt
+ª   ª           24-dev-init-backend-false.txt
+ª   ª           25-dev-validate.txt
+ª   ª           26-dev-providers-tree.txt
+ª   ª           27-qa-init-backend-false.txt
+ª   ª           28-qa-validate.txt
+ª   ª           29-prod-init-backend-false.txt
+ª   ª           30-prod-validate.txt
+ª   ª           32-dev-tflint.txt
+ª   ª           33-dev-tflint-clean.txt
+ª   ª           34-phase1-final-tree.txt
+ª   ª           35-phase1-commit.txt
+ª   ª           35-phase1-git-status.txt
+ª   ª           
+ª   +---phase-2
+ª   ª   +---screenshots
+ª   ª   ª       F2-InternetGateway.png
+ª   ª   ª       F2-NatGateway.png
+ª   ª   ª       F2-RouteTables.png
+ª   ª   ª       F2-Subnets.png
+ª   ª   ª       F2-VPC.png
+ª   ª   ª       
+ª   ª   +---txt
+ª   ª           01-phase2-initial-tree.txt
+ª   ª           02-network-versions.txt
+ª   ª           03-network-variables.txt
+ª   ª           04-network-main.txt
+ª   ª           05-network-outputs.txt
+ª   ª           06-network-readme.txt
+ª   ª           07-dev-main.txt
+ª   ª           08-dev-outputs.txt
+ª   ª           09-dev-tfvars.txt
+ª   ª           10-network-tradeoffs.txt
+ª   ª           11-adr-004.txt
+ª   ª           12-mermaid-phase2.txt
+ª   ª           14-dev-init-backend-false.txt
+ª   ª           15-dev-validate.txt
+ª   ª           16-dev-providers.txt
+ª   ª           17-dev-plan.txt
+ª   ª           18-dev-plan-out.txt
+ª   ª           19-dev-plan-show.txt
+ª   ª           20-dev-tflint.txt
+ª   ª           21-phase2-relevant-files.txt
+ª   ª           22-phase2-final-tree.txt
+ª   ª           23-phase2-git-status.txt
+ª   ª           24-phase2-commit.txt
+ª   ª           
+ª   +---phase-3
+ª   ª   +---screenshots
+ª   ª   ª       F3-IAMRole.png
+ª   ª   ª       F3-ManagedInstance.png
+ª   ª   ª       F3-SecurityGroup.png
+ª   ª   ª       F3-SessionManager.png
+ª   ª   ª       
+ª   ª   +---txt
+ª   ª           01-phase3-initial-tree.txt
+ª   ª           02-access-versions.txt
+ª   ª           03-access-variables.txt
+ª   ª           04-access-main.txt
+ª   ª           05-access-outputs.txt
+ª   ª           06-access-readme.txt
+ª   ª           07-dev-main.txt
+ª   ª           08-dev-outputs.txt
+ª   ª           09-access-tradeoffs.txt
+ª   ª           10-adr-005.txt
+ª   ª           11-mermaid-phase3.txt
+ª   ª           13-dev-init-backend-false.txt
+ª   ª           14-dev-validate.txt
+ª   ª           15-dev-providers.txt
+ª   ª           16-dev-plan.txt
+ª   ª           17-dev-plan-out.txt
+ª   ª           18-dev-plan-show.txt
+ª   ª           19-dev-apply.txt
+ª   ª           20-dev-outputs.txt
+ª   ª           22-ssm-managed-instances.txt
+ª   ª           23-ssm-start-session.txt
+ª   ª           24-phase3-relevant-files.txt
+ª   ª           25-phase3-final-tree.txt
+ª   ª           
+ª   +---phase-4
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-5
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-6
+ª   ª   +---screenshots
+ª   ª   +---txt
+ª   +---phase-7
+ª       +---screenshots
+ª       +---txt
++---modules
+ª   +---access
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       README.md
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---budgets
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       README.md
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---iam
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       README.md
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---logging
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       README.md
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---network
+ª   ª       main.tf
+ª   ª       outputs.tf
+ª   ª       README.md
+ª   ª       variables.tf
+ª   ª       versions.tf
+ª   ª       
+ª   +---observability
+ª           main.tf
+ª           outputs.tf
+ª           README.md
+ª           variables.tf
+ª           versions.tf
+ª           
++---scripts
+    +---bootstrap
+    ª       bootstrap.ps1
+    ª       
+    +---helpers
+    ª       collect-evidence.ps1
+    ª       
+    +---validation
+            validate-local-tooling.ps1
+            

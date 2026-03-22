@@ -1,0 +1,9 @@
+
+Providers required by configuration:
+.
+Ôö£ÔöÇÔöÇ provider[registry.terraform.io/hashicorp/aws] ~> 5.0
+Ôö£ÔöÇÔöÇ module.network
+Ôöé┬á┬á ÔööÔöÇÔöÇ provider[registry.terraform.io/hashicorp/aws] ~> 5.0
+ÔööÔöÇÔöÇ module.access
+    ÔööÔöÇÔöÇ provider[registry.terraform.io/hashicorp/aws] ~> 5.0
+

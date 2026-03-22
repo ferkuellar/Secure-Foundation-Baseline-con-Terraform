@@ -1,0 +1,18 @@
+flowchart LR
+    Admin[Administrator]
+    SSM[AWS Systems Manager Session Manager]
+    NAT[NAT Gateway]
+
+    subgraph VPC["VPC"]
+        subgraph Private["Private Subnet"]
+            EC2[Admin EC2 Instance]
+            SG[Security Group\nNo inbound SSH\nEgress: 443, 53]
+            ROLE[IAM Role + Instance Profile]
+        end
+    end
+
+    Admin --> SSM
+    SSM --> EC2
+    EC2 --> SG
+    EC2 --> ROLE
+    EC2 --> NAT

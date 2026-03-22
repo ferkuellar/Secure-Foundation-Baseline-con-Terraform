@@ -1,0 +1,33 @@
+admin_instance_id = "i-064239060413caae6"
+admin_instance_private_ip = "10.10.11.137"
+admin_security_group_id = "sg-04e4729debc369ef4"
+availability_zones_used = tolist([
+  "us-east-1a",
+  "us-east-1b",
+])
+common_tags = {
+  "BusinessUnit" = "Architecture"
+  "CostCenter" = "LAB-001"
+  "Environment" = "dev"
+  "ManagedBy" = "terraform"
+  "Owner" = "Fernando"
+  "Project" = "terraform-secure-foundation"
+  "Repository" = "terraform-secure-foundation"
+}
+internet_gateway_id = "igw-00716477a823a05ed"
+name_prefix = "terraform-secure-foundation-dev"
+nat_gateway_id = "nat-00d5a50644bc61eab"
+private_route_table_id = "rtb-06ab0e4074a377539"
+private_subnet_ids = {
+  "private-1" = "subnet-0d7d8906d53030291"
+  "private-2" = "subnet-042f4ddd0af1468bf"
+}
+public_route_table_id = "rtb-0e3252f2f63af0677"
+public_subnet_ids = {
+  "public-1" = "subnet-0ab95d51060121613"
+  "public-2" = "subnet-0051434af599d7f9d"
+}
+ssm_instance_profile_name = "terraform-secure-foundation-dev-ec2-ssm-profile"
+ssm_role_name = "terraform-secure-foundation-dev-ec2-ssm-role"
+vpc_cidr = "10.10.0.0/16"
+vpc_id = "vpc-0620491a9f43876ff"

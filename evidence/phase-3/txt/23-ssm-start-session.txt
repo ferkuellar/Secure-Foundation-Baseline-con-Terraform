@@ -1,0 +1,8 @@
+
+Starting session with SessionId: terraform-secure-foundation-sqp3bfrnd5ia6daqef5pcetn24
+[?2004hsh-5.2$ 
+[K
+sh-5.2$ 
+[?2004l
+[?2004hsh-5.2$ 
+[?2004l

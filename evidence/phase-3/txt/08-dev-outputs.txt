@@ -77,8 +77,3 @@ output "ssm_instance_profile_name" {
   description = "IAM instance profile used by the admin instance."
   value       = module.access.ssm_instance_profile_name
 }
-
-output "instance_id" {
-  description = "EC2 instance ID for Session Manager"
-  value       = module.access.admin_host_instance_id
-}

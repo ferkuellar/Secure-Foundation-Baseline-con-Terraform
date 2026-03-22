@@ -2,7 +2,7 @@
 
 ## Objective
 
-Build a Terraform project focused on a secure cloud foundation baseline with reusable modules, environment separation, evidence collection, architecture documentation, and validation discipline.
+Terraform project focused on a secure cloud foundation baseline with reusable modules, environment separation, evidence collection, architecture documentation, and validation discipline.
 
 ## Scope
 

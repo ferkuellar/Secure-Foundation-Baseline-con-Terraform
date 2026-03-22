@@ -1,0 +1,34 @@
+output "admin_security_group_id" {
+  description = "Security group ID for the admin host."
+  value       = aws_security_group.admin_host.id
+}
+
+output "admin_instance_id" {
+  description = "EC2 instance ID for the admin host."
+  value       = aws_instance.admin_host.id
+}
+
+output "admin_instance_private_ip" {
+  description = "Private IP of the admin host."
+  value       = aws_instance.admin_host.private_ip
+}
+
+output "ssm_role_name" {
+  description = "IAM role name attached to the admin instance."
+  value       = aws_iam_role.ssm_instance_role.name
+}
+
+output "ssm_instance_profile_name" {
+  description = "Instance profile name for the admin host."
+  value       = aws_iam_instance_profile.ssm_instance_profile.name
+}
+
+output "admin_ami_id" {
+  description = "AMI used for the admin host."
+  value       = data.aws_ami.amazon_linux_2023.id
+}
+
+output "admin_host_instance_id" {
+  description = "EC2 instance ID for the admin host"
+  value       = aws_instance.admin_host.id
+}
