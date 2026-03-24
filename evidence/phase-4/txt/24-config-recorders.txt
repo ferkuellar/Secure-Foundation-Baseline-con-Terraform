@@ -1,0 +1,25 @@
+{
+    "ConfigurationRecorders": [
+        {
+            "arn": "arn:aws:config:us-east-1:151567229153:configuration-recorder/terraform-secure-foundation-dev-config-recorder/uoaa9psvgaxu7zpv",
+            "name": "terraform-secure-foundation-dev-config-recorder",
+            "roleARN": "arn:aws:iam::151567229153:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig",
+            "recordingGroup": {
+                "allSupported": true,
+                "includeGlobalResourceTypes": true,
+                "resourceTypes": [],
+                "exclusionByResourceTypes": {
+                    "resourceTypes": []
+                },
+                "recordingStrategy": {
+                    "useOnly": "ALL_SUPPORTED_RESOURCE_TYPES"
+                }
+            },
+            "recordingMode": {
+                "recordingFrequency": "CONTINUOUS",
+                "recordingModeOverrides": []
+            },
+            "recordingScope": "PAID"
+        }
+    ]
+}

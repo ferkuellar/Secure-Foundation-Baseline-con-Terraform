@@ -1,0 +1,200 @@
+{
+    "FlowLogs": [
+        {
+            "CreationTime": "2026-03-09T00:36:33.040000+00:00",
+            "DeliverLogsPermissionArn": "arn:aws:iam::151567229153:role/aegis-lz-aws-dev-vpc-flowlogs-role",
+            "DeliverLogsStatus": "SUCCESS",
+            "FlowLogId": "fl-05d970d6dd7bb3558",
+            "FlowLogStatus": "ACTIVE",
+            "LogGroupName": "/aws/vpc/flowlogs/aegis-lz-aws-dev",
+            "ResourceId": "vpc-0fb2af4eafd34adb2",
+            "TrafficType": "ALL",
+            "LogDestinationType": "cloud-watch-logs",
+            "LogDestination": "arn:aws:logs:us-east-1:151567229153:log-group:/aws/vpc/flowlogs/aegis-lz-aws-dev",
+            "LogFormat": "${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status}",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "aegis-lz-aws"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "Owner",
+                    "Value": "Fernando"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Terraform"
+                },
+                {
+                    "Key": "Tier",
+                    "Value": "logging"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "aegis-lz-aws-dev-vpc-flowlogs"
+                }
+            ],
+            "MaxAggregationInterval": 600
+        },
+        {
+            "CreationTime": "2026-03-10T01:40:24.462000+00:00",
+            "DeliverLogsPermissionArn": "arn:aws:iam::151567229153:role/nbf-sentinel-dev-role-flowlogs",
+            "DeliverLogsStatus": "SUCCESS",
+            "FlowLogId": "fl-04d3c391c1ed7d9ba",
+            "FlowLogStatus": "ACTIVE",
+            "LogGroupName": "/aws/vpc/flowlogs/nbf-sentinel-dev",
+            "ResourceId": "vpc-041a277d11b81fc73",
+            "TrafficType": "ALL",
+            "LogDestinationType": "cloud-watch-logs",
+            "LogDestination": "arn:aws:logs:us-east-1:151567229153:log-group:/aws/vpc/flowlogs/nbf-sentinel-dev",
+            "LogFormat": "${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status}",
+            "Tags": [
+                {
+                    "Key": "Role",
+                    "Value": "network-telemetry"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "Sentinel-Foundation-AWS"
+                },
+                {
+                    "Key": "Owner",
+                    "Value": "Fernando"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Terraform"
+                },
+                {
+                    "Key": "CostCenter",
+                    "Value": "Platform"
+                },
+                {
+                    "Key": "SecurityTier",
+                    "Value": "Foundation"
+                },
+                {
+                    "Key": "BusinessUnit",
+                    "Value": "Northbound"
+                },
+                {
+                    "Key": "DataClassification",
+                    "Value": "Internal"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "nbf-sentinel-dev-flowlogs-vpc"
+                }
+            ],
+            "MaxAggregationInterval": 600
+        },
+        {
+            "CreationTime": "2026-03-13T00:45:00.659000+00:00",
+            "DeliverLogsPermissionArn": "arn:aws:iam::151567229153:role/novatel-net-dev-flowlogs-role",
+            "DeliverLogsStatus": "SUCCESS",
+            "FlowLogId": "fl-05e8590a52f499b54",
+            "FlowLogStatus": "ACTIVE",
+            "LogGroupName": "/aws/vpc/novatel-net-dev/flowlogs",
+            "ResourceId": "vpc-007bfb08f99ed1f9c",
+            "TrafficType": "ALL",
+            "LogDestinationType": "cloud-watch-logs",
+            "LogDestination": "arn:aws:logs:us-east-1:151567229153:log-group:/aws/vpc/novatel-net-dev/flowlogs",
+            "LogFormat": "${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status}",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "Telco-Sentinel-AWS"
+                },
+                {
+                    "Key": "Owner",
+                    "Value": "Fernando"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Terraform"
+                },
+                {
+                    "Key": "CostCenter",
+                    "Value": "ArchitectureLab"
+                },
+                {
+                    "Key": "DataClassification",
+                    "Value": "Internal"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "Domain",
+                    "Value": "net"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "novatel-net-dev-vpc-flowlogs-useast1"
+                }
+            ],
+            "MaxAggregationInterval": 600
+        },
+        {
+            "CreationTime": "2026-03-24T01:18:45.141000+00:00",
+            "DeliverLogsPermissionArn": "arn:aws:iam::151567229153:role/terraform-secure-foundation-dev-flowlogs-role",
+            "DeliverLogsStatus": "SUCCESS",
+            "FlowLogId": "fl-073d4dae3f7ec2dec",
+            "FlowLogStatus": "ACTIVE",
+            "LogGroupName": "/aws/vpc/flowlogs/terraform-secure-foundation-dev",
+            "ResourceId": "vpc-0620491a9f43876ff",
+            "TrafficType": "ALL",
+            "LogDestinationType": "cloud-watch-logs",
+            "LogDestination": "arn:aws:logs:us-east-1:151567229153:log-group:/aws/vpc/flowlogs/terraform-secure-foundation-dev",
+            "LogFormat": "${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status}",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "terraform-secure-foundation"
+                },
+                {
+                    "Key": "Owner",
+                    "Value": "Fernando"
+                },
+                {
+                    "Key": "Repository",
+                    "Value": "terraform-secure-foundation"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "CostCenter",
+                    "Value": "LAB-001"
+                },
+                {
+                    "Key": "BusinessUnit",
+                    "Value": "Architecture"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "Module",
+                    "Value": "audit"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "terraform-secure-foundation-dev-vpc-flowlog"
+                }
+            ],
+            "MaxAggregationInterval": 600
+        }
+    ]
+}

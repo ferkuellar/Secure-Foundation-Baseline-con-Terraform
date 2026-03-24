@@ -1,0 +1,12 @@
+{
+    "IsLogging": true,
+    "LatestDeliveryTime": "2026-03-23T19:27:38.829000-06:00",
+    "StartLoggingTime": "2026-03-23T19:18:57.051000-06:00",
+    "LatestCloudWatchLogsDeliveryTime": "2026-03-23T19:27:57.935000-06:00",
+    "LatestDeliveryAttemptTime": "2026-03-24T01:27:38Z",
+    "LatestNotificationAttemptTime": "",
+    "LatestNotificationAttemptSucceeded": "",
+    "LatestDeliveryAttemptSucceeded": "2026-03-24T01:27:38Z",
+    "TimeLoggingStarted": "2026-03-24T01:18:57Z",
+    "TimeLoggingStopped": ""
+}

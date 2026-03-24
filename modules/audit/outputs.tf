@@ -1,0 +1,39 @@
+output "cloudtrail_bucket_name" {
+  description = "S3 bucket used by CloudTrail."
+  value       = aws_s3_bucket.cloudtrail.bucket
+}
+
+output "cloudtrail_name" {
+  description = "CloudTrail trail name."
+  value       = aws_cloudtrail.main.name
+}
+
+output "cloudtrail_log_group_name" {
+  description = "CloudWatch log group for CloudTrail."
+  value       = aws_cloudwatch_log_group.cloudtrail.name
+}
+
+output "config_bucket_name" {
+  description = "S3 bucket used by AWS Config."
+  value       = aws_s3_bucket.config.bucket
+}
+
+output "config_recorder_name" {
+  description = "AWS Config recorder name."
+  value       = aws_config_configuration_recorder.main.name
+}
+
+output "flow_logs_log_group_name" {
+  description = "CloudWatch log group for VPC Flow Logs."
+  value       = aws_cloudwatch_log_group.flow_logs.name
+}
+
+output "flow_log_id" {
+  description = "VPC Flow Log ID."
+  value       = aws_flow_log.vpc.id
+}
+
+output "iam_changes_alarm_name" {
+  description = "CloudWatch alarm for IAM changes."
+  value       = aws_cloudwatch_metric_alarm.iam_changes.alarm_name
+}

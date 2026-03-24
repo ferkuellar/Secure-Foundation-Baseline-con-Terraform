@@ -1,0 +1,44 @@
+[0m[1mmodule.audit.aws_iam_service_linked_role.config: Creating...[0m[0m
+[0m[1mmodule.audit.aws_cloudwatch_log_group.flow_logs: Creating...[0m[0m
+[0m[1mmodule.audit.aws_cloudwatch_log_group.cloudtrail: Creating...[0m[0m
+[0m[1mmodule.audit.aws_iam_role.cloudtrail_to_cw: Creating...[0m[0m
+[0m[1mmodule.audit.aws_iam_role.flow_logs: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket.config: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket.cloudtrail: Creating...[0m[0m
+[0m[1mmodule.audit.aws_iam_service_linked_role.config: Creation complete after 0s [id=arn:aws:iam::151567229153:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig][0m
+[0m[1mmodule.audit.aws_cloudwatch_log_group.cloudtrail: Creation complete after 0s [id=/aws/cloudtrail/terraform-secure-foundation-dev][0m
+[0m[1mmodule.audit.aws_cloudwatch_log_group.flow_logs: Creation complete after 0s [id=/aws/vpc/flowlogs/terraform-secure-foundation-dev][0m
+[0m[1mmodule.audit.aws_cloudwatch_log_metric_filter.iam_changes: Creating...[0m[0m
+[0m[1mmodule.audit.aws_config_configuration_recorder.main: Creating...[0m[0m
+[0m[1mmodule.audit.aws_iam_role.flow_logs: Creation complete after 0s [id=terraform-secure-foundation-dev-flowlogs-role][0m
+[0m[1mmodule.audit.aws_iam_role_policy.flow_logs: Creating...[0m[0m
+[0m[1mmodule.audit.aws_flow_log.vpc: Creating...[0m[0m
+[0m[1mmodule.audit.aws_iam_role.cloudtrail_to_cw: Creation complete after 0s [id=terraform-secure-foundation-dev-cloudtrail-cw-role][0m
+[0m[1mmodule.audit.aws_iam_role_policy.cloudtrail_to_cw: Creating...[0m[0m
+[0m[1mmodule.audit.aws_cloudwatch_log_metric_filter.iam_changes: Creation complete after 0s [id=terraform-secure-foundation-dev-iam-changes-filter][0m
+[0m[1mmodule.audit.aws_cloudwatch_metric_alarm.iam_changes: Creating...[0m[0m
+[0m[1mmodule.audit.aws_iam_role_policy.flow_logs: Creation complete after 0s [id=terraform-secure-foundation-dev-flowlogs-role:terraform-secure-foundation-dev-flowlogs-policy][0m
+[0m[1mmodule.audit.aws_iam_role_policy.cloudtrail_to_cw: Creation complete after 0s [id=terraform-secure-foundation-dev-cloudtrail-cw-role:terraform-secure-foundation-dev-cloudtrail-cw-policy][0m
+[0m[1mmodule.audit.aws_flow_log.vpc: Creation complete after 1s [id=fl-073d4dae3f7ec2dec][0m
+[0m[1mmodule.audit.aws_cloudwatch_metric_alarm.iam_changes: Creation complete after 1s [id=terraform-secure-foundation-dev-iam-changes-alarm][0m
+[0m[1mmodule.audit.aws_s3_bucket.cloudtrail: Creation complete after 2s [id=terraform-secure-foundation-dev-cloudtrail-151567229153][0m
+[0m[1mmodule.audit.aws_s3_bucket_public_access_block.cloudtrail: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket_policy.cloudtrail: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket_versioning.cloudtrail: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket_server_side_encryption_configuration.cloudtrail: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket.config: Creation complete after 2s [id=terraform-secure-foundation-dev-config-151567229153][0m
+[0m[1mmodule.audit.aws_s3_bucket_public_access_block.config: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket_policy.config: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket_server_side_encryption_configuration.config: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket_versioning.config: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket_public_access_block.cloudtrail: Creation complete after 0s [id=terraform-secure-foundation-dev-cloudtrail-151567229153][0m
+[0m[1mmodule.audit.aws_s3_bucket_policy.cloudtrail: Creation complete after 0s [id=terraform-secure-foundation-dev-cloudtrail-151567229153][0m
+[0m[1mmodule.audit.aws_cloudtrail.main: Creating...[0m[0m
+[0m[1mmodule.audit.aws_s3_bucket_public_access_block.config: Creation complete after 0s [id=terraform-secure-foundation-dev-config-151567229153][0m
+[0m[1mmodule.audit.aws_s3_bucket_policy.config: Creation complete after 1s [id=terraform-secure-foundation-dev-config-151567229153][0m
+[0m[1mmodule.audit.aws_s3_bucket_server_side_encryption_configuration.config: Creation complete after 1s [id=terraform-secure-foundation-dev-config-151567229153][0m
+[0m[1mmodule.audit.aws_s3_bucket_server_side_encryption_configuration.cloudtrail: Creation complete after 1s [id=terraform-secure-foundation-dev-cloudtrail-151567229153][0m
+[0m[1mmodule.audit.aws_s3_bucket_versioning.config: Creation complete after 2s [id=terraform-secure-foundation-dev-config-151567229153][0m
+[0m[1mmodule.audit.aws_s3_bucket_versioning.cloudtrail: Creation complete after 2s [id=terraform-secure-foundation-dev-cloudtrail-151567229153][0m
+[0m[1mmodule.audit.aws_cloudtrail.main: Still creating... [00m10s elapsed][0m[0m
+[0m[1mmodule.audit.aws_cloudtrail.main: Creation complete after 11s [id=arn:aws:cloudtrail:us-east-1:151567229153:trail/terraform-secure-foundation-dev-trail][0m

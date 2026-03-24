@@ -1,0 +1,25 @@
+flowchart LR
+    API[Management API Calls]
+    CT[CloudTrail]
+    CTS3[S3 CloudTrail Bucket]
+    CTCW[CloudWatch Logs - CloudTrail]
+    MF[Metric Filter]
+    ALARM[CloudWatch Alarm]
+
+    CFG[AWS Config]
+    CFGS3[S3 Config Bucket]
+
+    VPC[VPC]
+    FL[VPC Flow Logs]
+    FLCW[CloudWatch Logs - Flow Logs]
+
+    API --> CT
+    CT --> CTS3
+    CT --> CTCW
+    CTCW --> MF
+    MF --> ALARM
+
+    CFG --> CFGS3
+
+    VPC --> FL
+    FL --> FLCW 

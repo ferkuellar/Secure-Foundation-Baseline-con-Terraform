@@ -1,0 +1,11 @@
+{
+    "DeliveryChannels": [
+        {
+            "name": "terraform-secure-foundation-dev-config-delivery-channel",
+            "s3BucketName": "terraform-secure-foundation-dev-config-151567229153",
+            "configSnapshotDeliveryProperties": {
+                "deliveryFrequency": "TwentyFour_Hours"
+            }
+        }
+    ]
+}

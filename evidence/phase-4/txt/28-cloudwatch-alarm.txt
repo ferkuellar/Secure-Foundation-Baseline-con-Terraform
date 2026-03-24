@@ -1,0 +1,29 @@
+{
+    "MetricAlarms": [
+        {
+            "AlarmName": "terraform-secure-foundation-dev-iam-changes-alarm",
+            "AlarmArn": "arn:aws:cloudwatch:us-east-1:151567229153:alarm:terraform-secure-foundation-dev-iam-changes-alarm",
+            "AlarmDescription": "Alarm on sensitive IAM management events from CloudTrail",
+            "AlarmConfigurationUpdatedTimestamp": "2026-03-23T19:18:45.177000-06:00",
+            "ActionsEnabled": true,
+            "OKActions": [],
+            "AlarmActions": [],
+            "InsufficientDataActions": [],
+            "StateValue": "OK",
+            "StateReason": "Threshold Crossed: no datapoints were received for 1 period and 1 missing datapoint was treated as [NonBreaching].",
+            "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-03-24T01:19:41.301+0000\",\"statistic\":\"Sum\",\"period\":300,\"recentDatapoints\":[],\"threshold\":1.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-03-24T01:14:00.000+0000\"}]}",
+            "StateUpdatedTimestamp": "2026-03-23T19:19:41.302000-06:00",
+            "MetricName": "terraform_secure_foundation_dev_iam_changes",
+            "Namespace": "Security/Posture",
+            "Statistic": "Sum",
+            "Dimensions": [],
+            "Period": 300,
+            "EvaluationPeriods": 1,
+            "Threshold": 1.0,
+            "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+            "TreatMissingData": "notBreaching",
+            "StateTransitionedTimestamp": "2026-03-23T19:19:41.302000-06:00"
+        }
+    ],
+    "CompositeAlarms": []
+}

@@ -1,0 +1,63 @@
+{
+    "trailList": [
+        {
+            "Name": "aegis-lz-aws-dev-trail",
+            "S3BucketName": "aegis-lz-aws-dev-151567229153-cloudtrail-logs",
+            "IncludeGlobalServiceEvents": true,
+            "IsMultiRegionTrail": true,
+            "HomeRegion": "us-east-1",
+            "TrailARN": "arn:aws:cloudtrail:us-east-1:151567229153:trail/aegis-lz-aws-dev-trail",
+            "LogFileValidationEnabled": true,
+            "CloudWatchLogsLogGroupArn": "arn:aws:logs:us-east-1:151567229153:log-group:/aws/cloudtrail/aegis-lz-aws-dev:*",
+            "CloudWatchLogsRoleArn": "arn:aws:iam::151567229153:role/aegis-lz-aws-dev-cloudtrail-to-cw-role",
+            "KmsKeyId": "arn:aws:kms:us-east-1:151567229153:key/b98f542d-6be7-469a-b4dd-b1598510f940",
+            "HasCustomEventSelectors": false,
+            "HasInsightSelectors": false,
+            "IsOrganizationTrail": false
+        },
+        {
+            "Name": "nbf-sentinel-dev-trail",
+            "S3BucketName": "nbf-sentinel-dev-audit-151567229153",
+            "IncludeGlobalServiceEvents": true,
+            "IsMultiRegionTrail": true,
+            "HomeRegion": "us-east-1",
+            "TrailARN": "arn:aws:cloudtrail:us-east-1:151567229153:trail/nbf-sentinel-dev-trail",
+            "LogFileValidationEnabled": true,
+            "CloudWatchLogsLogGroupArn": "arn:aws:logs:us-east-1:151567229153:log-group:/aws/cloudtrail/nbf-sentinel-dev:*",
+            "CloudWatchLogsRoleArn": "arn:aws:iam::151567229153:role/nbf-sentinel-dev-role-cloudtrail-cw",
+            "KmsKeyId": "arn:aws:kms:us-east-1:151567229153:key/f90c9566-cb3b-4ef3-aa77-42770ca2250c",
+            "HasCustomEventSelectors": false,
+            "HasInsightSelectors": false,
+            "IsOrganizationTrail": false
+        },
+        {
+            "Name": "novatel-sec-dev-trail",
+            "S3BucketName": "novatel-sec-dev-trail-logs-151567229153",
+            "IncludeGlobalServiceEvents": true,
+            "IsMultiRegionTrail": true,
+            "HomeRegion": "us-east-1",
+            "TrailARN": "arn:aws:cloudtrail:us-east-1:151567229153:trail/novatel-sec-dev-trail",
+            "LogFileValidationEnabled": true,
+            "CloudWatchLogsLogGroupArn": "arn:aws:logs:us-east-1:151567229153:log-group:/aws/cloudtrail/novatel-sec-dev:*",
+            "CloudWatchLogsRoleArn": "arn:aws:iam::151567229153:role/novatel-sec-dev-cloudtrail-cw-role",
+            "KmsKeyId": "arn:aws:kms:us-east-1:151567229153:key/06e57a3c-ac44-4331-badb-f2db49032992",
+            "HasCustomEventSelectors": false,
+            "HasInsightSelectors": false,
+            "IsOrganizationTrail": false
+        },
+        {
+            "Name": "terraform-secure-foundation-dev-trail",
+            "S3BucketName": "terraform-secure-foundation-dev-cloudtrail-151567229153",
+            "IncludeGlobalServiceEvents": true,
+            "IsMultiRegionTrail": true,
+            "HomeRegion": "us-east-1",
+            "TrailARN": "arn:aws:cloudtrail:us-east-1:151567229153:trail/terraform-secure-foundation-dev-trail",
+            "LogFileValidationEnabled": true,
+            "CloudWatchLogsLogGroupArn": "arn:aws:logs:us-east-1:151567229153:log-group:/aws/cloudtrail/terraform-secure-foundation-dev:*",
+            "CloudWatchLogsRoleArn": "arn:aws:iam::151567229153:role/terraform-secure-foundation-dev-cloudtrail-cw-role",
+            "HasCustomEventSelectors": false,
+            "HasInsightSelectors": false,
+            "IsOrganizationTrail": false
+        }
+    ]
+}

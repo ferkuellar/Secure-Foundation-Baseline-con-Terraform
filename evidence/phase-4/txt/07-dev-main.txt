@@ -26,12 +26,12 @@ module "access" {
 module "audit" {
   source = "../../modules/audit"
 
-  project_name                   = var.project_name
-  environment                    = var.environment
-  name_prefix                    = local.name_prefix
-  common_tags                    = local.common_tags
-  vpc_id                         = module.network.vpc_id
-  enable_multi_region_trail      = true
-  flow_logs_retention_days       = 30
+  project_name                 = var.project_name
+  environment                  = var.environment
+  name_prefix                  = local.name_prefix
+  common_tags                  = local.common_tags
+  vpc_id                       = module.network.vpc_id
+  enable_multi_region_trail    = true
+  flow_logs_retention_days     = 30
   cloudtrail_logs_retention_days = 30
 }
