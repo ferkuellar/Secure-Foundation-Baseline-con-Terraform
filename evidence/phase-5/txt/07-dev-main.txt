@@ -39,12 +39,12 @@ module "audit" {
 module "observability" {
   source = "../../modules/observability"
 
-  project_name             = var.project_name
-  environment              = var.environment
-  aws_region               = var.aws_region
-  name_prefix              = local.name_prefix
-  common_tags              = local.common_tags
-  admin_instance_id        = module.access.admin_instance_id
+  project_name            = var.project_name
+  environment             = var.environment
+  aws_region              = var.aws_region
+  name_prefix             = local.name_prefix
+  common_tags             = local.common_tags
+  admin_instance_id       = module.access.admin_instance_id
   admin_instance_role_name = module.access.ssm_role_name
   flow_logs_log_group_name = module.audit.flow_logs_log_group_name
   host_logs_retention_days = 30

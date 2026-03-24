@@ -1,0 +1,17 @@
+
+Providers required by configuration:
+.
+Ôö£ÔöÇÔöÇ provider[registry.terraform.io/hashicorp/aws] ~> 5.0
+Ôö£ÔöÇÔöÇ module.observability
+Ôöé┬á┬á ÔööÔöÇÔöÇ provider[registry.terraform.io/hashicorp/aws] ~> 5.0
+Ôö£ÔöÇÔöÇ module.access
+Ôöé┬á┬á ÔööÔöÇÔöÇ provider[registry.terraform.io/hashicorp/aws] ~> 5.0
+Ôö£ÔöÇÔöÇ module.audit
+Ôöé┬á┬á ÔööÔöÇÔöÇ provider[registry.terraform.io/hashicorp/aws] ~> 5.0
+ÔööÔöÇÔöÇ module.network
+    ÔööÔöÇÔöÇ provider[registry.terraform.io/hashicorp/aws] ~> 5.0
+
+Providers required by state:
+
+    provider[registry.terraform.io/hashicorp/aws]
+

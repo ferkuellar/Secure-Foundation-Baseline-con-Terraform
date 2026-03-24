@@ -1,0 +1,22 @@
+flowchart LR
+    EC2[Admin EC2 Instance]
+    SSM[Systems Manager]
+    PARAM[Parameter Store\nCloudWatch Agent Config]
+    CWAGENT[CloudWatch Agent]
+    LOGS[CloudWatch Log Groups\nsystem / auth / boot]
+    METRICS[CloudWatch Metrics\nCPU / Status / Mem / Disk]
+    FLOW[VPC Flow Logs]
+    MF[Metric Filter\nREJECT]
+    ALARMS[CloudWatch Alarms]
+    DASH[Operations Dashboard]
+
+    SSM --> EC2
+    PARAM --> CWAGENT
+    EC2 --> CWAGENT
+    CWAGENT --> LOGS
+    CWAGENT --> METRICS
+    FLOW --> MF
+    MF --> ALARMS
+    METRICS --> ALARMS
+    METRICS --> DASH
+    ALARMS --> DASH

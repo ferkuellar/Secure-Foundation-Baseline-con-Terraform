@@ -1,0 +1,23 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   environments/dev/main.tf
+	modified:   environments/dev/outputs.tf
+	modified:   modules/observability/README.md
+	modified:   modules/observability/main.tf
+	modified:   modules/observability/outputs.tf
+	modified:   modules/observability/variables.tf
+	modified:   modules/observability/versions.tf
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/adrs/ADR-007-operational-observability.md
+	docs/architecture/phase-5-observability-tradeoffs.md
+	docs/mermaid/phase-5-operational-observability.mmd
+	evidence/phase-4/txt/32-phase4-commit.txt
+	evidence/phase-5/
+
+no changes added to commit (use "git add" and/or "git commit -a")

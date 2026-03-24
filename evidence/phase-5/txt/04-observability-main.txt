@@ -13,64 +13,64 @@ locals {
   host_boot_log_group   = "/aws/ec2/${var.name_prefix}/boot"
 
   cwagent_config = jsonencode({
-  agent = {
-    metrics_collection_interval = 60
-    run_as_user                 = "root"
-  }
-  metrics = {
-    namespace = "CWAgent"
-    append_dimensions = {
-      InstanceId = "$${aws:InstanceId}"
+    agent = {
+      metrics_collection_interval = 60
+      run_as_user                 = "root"
     }
-    metrics_collected = {
-      mem = {
-        measurement = [
-          "mem_used_percent"
-        ]
+    metrics = {
+      namespace = "CWAgent"
+      append_dimensions = {
+        InstanceId = "${aws:InstanceId}"
       }
-      disk = {
-        measurement = [
-          "disk_used_percent"
-        ]
-        resources = [
-          "/"
-        ]
-      }
-    }
-  }
-  logs = {
-    logs_collected = {
-      files = {
-        collect_list = [
-          {
-            file_path       = "/var/log/messages"
-            log_group_name  = local.host_system_log_group
-            log_stream_name = "{instance_id}"
-            timezone        = "UTC"
-          },
-          {
-            file_path       = "/var/log/secure"
-            log_group_name  = local.host_auth_log_group
-            log_stream_name = "{instance_id}"
-            timezone        = "UTC"
-          },
-          {
-            file_path       = "/var/log/cloud-init.log"
-            log_group_name  = local.host_boot_log_group
-            log_stream_name = "{instance_id}"
-            timezone        = "UTC"
-          },
-          {
-            file_path       = "/var/log/cloud-init-output.log"
-            log_group_name  = local.host_boot_log_group
-            log_stream_name = "{instance_id}"
-            timezone        = "UTC"
-          }
-        ]
+      metrics_collected = {
+        mem = {
+          measurement = [
+            "mem_used_percent"
+          ]
+        }
+        disk = {
+          measurement = [
+            "disk_used_percent"
+          ]
+          resources = [
+            "/"
+          ]
+        }
       }
     }
-  }
-})
+    logs = {
+      logs_collected = {
+        files = {
+          collect_list = [
+            {
+              file_path      = "/var/log/messages"
+              log_group_name = local.host_system_log_group
+              log_stream_name = "{instance_id}"
+              timezone       = "UTC"
+            },
+            {
+              file_path      = "/var/log/secure"
+              log_group_name = local.host_auth_log_group
+              log_stream_name = "{instance_id}"
+              timezone       = "UTC"
+            },
+            {
+              file_path      = "/var/log/cloud-init.log"
+              log_group_name = local.host_boot_log_group
+              log_stream_name = "{instance_id}"
+              timezone       = "UTC"
+            },
+            {
+              file_path      = "/var/log/cloud-init-output.log"
+              log_group_name = local.host_boot_log_group
+              log_stream_name = "{instance_id}"
+              timezone       = "UTC"
+            }
+          ]
+        }
+      }
+    }
+  })
 }
 
 resource "aws_cloudwatch_log_group" "host_system" {
